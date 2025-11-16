@@ -9,7 +9,7 @@ const convex = new ConvexHttpClient(
 );
 
 const liveblocks = new Liveblocks({
-  secret: "sk_dev_52qmO__VlvJJ7usjED4sYUz1RvXGPeFEUVvcEULhjhR0zP0d-TxfFyAns_E1ajPA",
+  secret: process.env.LIVEBLOCKS_SECRET_KEY!,
 });
 
 /* Room api route */
